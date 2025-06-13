@@ -10,7 +10,7 @@ st.title("Random Forest 预测模型演示")
 model = joblib.load("RF_model.pkl")
 scaler = joblib.load("scaler.pkl")
 
-# 手动定义特征列名，防止泄露原始数据
+
 categorical_cols = ['Vertebral intraosseous abscess', 'Endplate inflammatory reaction line', 'Paravertebral abscess']
 quantitative_cols = ['Number of intervertebral discs destroyed', 'CRP', 'N%', 'L', 'Age', 'Height(m)']
 
