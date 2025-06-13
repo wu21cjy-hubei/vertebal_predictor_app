@@ -4,7 +4,7 @@ import numpy as np
 import joblib
 
 # 页面标题
-st.title("Random Forest 预测模型演示")
+st.title("Random Forest for vertebal 预测模型演示")
 
 # 加载模型与 scaler
 model = joblib.load("RF_model.pkl")
