@@ -10,10 +10,22 @@ st.title("Random Forest 预测模型演示")
 model = joblib.load("RF_model.pkl")
 scaler = joblib.load("scaler.pkl")
 
-
-categorical_cols = ['Vertebral intraosseous abscess', 'Endplate inflammatory reaction line', 'Paravertebral abscess']
-quantitative_cols = ['Number of intervertebral discs destroyed', 'CRP', 'N%', 'L', 'Age', 'Height(m)']
-
+# 手动定义特征列名
+categorical_cols = [
+    'Vertebral intraosseous abscess',
+    'Endplate inflammatory reaction line',
+    'Paravertebral abscess'
+]
+quantitative_cols = [
+    'Number of intervertebral discs destroyed',
+    'CRP',
+    'N%',
+    'L',
+    'Age',
+    'Height(m)',
+    'number of vertebrae involved',
+    'involved/normal'
+]
 # Streamlit 侧边栏输入真实值
 st.sidebar.header("请输入真实特征值：")
 input_data = {}
