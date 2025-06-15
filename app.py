@@ -49,5 +49,11 @@ if submitted:
         input_combined = pd.concat([input_combined, input_df[categorical_cols].reset_index(drop=True)], axis=1)
 
         prediction = model.predict(input_combined)[0]
+        prediction_proba = model.predict_proba(input_combined)[0]
+
         label_mapping = {0: "Group 1", 1: "Group 2", 2: "Group 3", 3: "Group 4"}
         st.success(f"✅ 模型预测结果：{label_mapping.get(prediction, prediction)}")
+
+        st.subheader("📊 四个组别预测概率：")
+        for i, prob in enumerate(prediction_proba):
+            st.write(f"{label_mapping.get(i)}: {prob:.3f}")
