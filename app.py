@@ -4,7 +4,7 @@ import numpy as np
 import joblib
 
 # 页面标题
-st.set_page_config(page_title="脊柱感染预测模型演示", layout="wide")
+st.set_page_config(page_title="Spinal Infection Prediction Model Demonstration", layout="wide")
 st.title("🌟 Random forest model for predicting infectious spondylitis")
 
 # 加载模型与 scaler
