@@ -112,6 +112,7 @@ if submitted:
         st.success(f"✅ model prediction results：{label_mapping.get(prediction, prediction)}")
 
         st.subheader("📊 Predicted probability for four groups：")
+        st.info("💡 Output shows predicted probabilities for all four spondylitis types.")
         for i, prob in enumerate(prediction_proba):
             percentage = prob * 100
             st.write(f"{label_mapping.get(i)}: {percentage:.1f}%")
