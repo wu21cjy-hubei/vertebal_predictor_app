@@ -17,14 +17,14 @@ categorical_cols = [
     'Lumbar and Sacrum(Involved=1/Not involved=0)',
     'Number of vertebrae involved(≤2 infectious vertebrae = 0; >2 infectious vertebrae = 1)',
     'Extent of vertebral destruction(0 = No height loss, intact endplate；1 = Endplate damaged, height loss <25%；2 = Severe damage, height loss ≥25%)',
-    'Vertebral intraosseous abscess(1 = Yse,0 = No)',
+    'Vertebral intraosseous abscess(1 = Yes,0 = No)',
     'Degree of disk destruction(0 = no height loss；1 = height loss <50%；2 = height loss >50%)',
-    'Subligamentous spread(1 = Yse,0 = No)',
-    'Skip lesion(1 = Yse,0 = No)',
-    'Endplate inflammatory reaction line(1 = Yse,0 = No)',
+    'Subligamentous spread(1 = Yes,0 = No)',
+    'Skip lesion(1 = Yes,0 = No)',
+    'Endplate inflammatory reaction line(1 = Yes,0 = No)',
     'Paravertebral abscess(0 = absent；1 = small (<½ vertebral body diameter)；2 = large (≥½ vertebral body diameter))',
-    'Neurological symptom(1 = Yse,0 = No)',
-    'Fever(1 = Yse,0 = No)'
+    'Neurological symptom(1 = Yes,0 = No)',
+    'Fever(1 = Yes,0 = No)'
 ]
 
 # 定量特征列名 (Involved=1/Not involved=0)
@@ -76,14 +76,14 @@ if submitted:
         'Lumbar and Sacrum(Involved=1/Not involved=0)': 'Lumbar and Sacrum',
         'Number of vertebrae involved(≤2 infectious vertebrae = 0; >2 infectious vertebrae = 1)': 'Number of vertebrae involved',
         'Extent of vertebral destruction(0 = No height loss, intact endplate；1 = Endplate damaged, height loss <25%；2 = Severe damage, height loss ≥25%)': 'Extent of vertebral destruction',
-        'Vertebral intraosseous abscess(1 = Yse,0 = No)': 'Vertebral intraosseous abscess',
+        'Vertebral intraosseous abscess(1 = Yes,0 = No)': 'Vertebral intraosseous abscess',
         'Degree of disk destruction(0 = no height loss；1 = height loss <50%；2 = height loss >50%)': 'Degree of disk destruction',
-        'Subligamentous spread(1 = Yse,0 = No)': 'Subligamentous spread',
-        'Skip lesion(1 = Yse,0 = No)': 'Skip lesion',
-        'Endplate inflammatory reaction line(1 = Yse,0 = No)': 'Endplate inflammatory reaction line',
+        'Subligamentous spread(1 = Yes,0 = No)': 'Subligamentous spread',
+        'Skip lesion(1 = Yes,0 = No)': 'Skip lesion',
+        'Endplate inflammatory reaction line(1 = Yes,0 = No)': 'Endplate inflammatory reaction line',
         'Paravertebral abscess(0 = absent；1 = small (<½ vertebral body diameter)；2 = large (≥½ vertebral body diameter))': 'Paravertebral abscess',
-        'Neurological symptom(1 = Yse,0 = No)': 'Neurological symptom',
-        'Fever(1 = Yse,0 = No)': 'Fever'
+        'Neurological symptom(1 = Yes,0 = No)': 'Neurological symptom',
+        'Fever(1 = Yes,0 = No)': 'Fever'
     }
     
     # 重命名列以匹配scaler期望的名称
